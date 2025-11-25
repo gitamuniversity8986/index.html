@@ -1,0 +1,791 @@
+<!DOCTYPE html><html lang="en"><head>
+	<base href="https://login.gitam.edu/"/>
+	<title>My-GITAM login</title>
+	<meta charset="UTF-8"/><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="keywords" content="My-GITAM, My GITAM, GITAM login"/><meta name="description" content="Login to My-GITAM, the official portal of GITAM (Deemed to be University), to securely access academic resources, student services, faculty tools, and administrative support online"/><meta name="robots" content="index, follow"/><meta name="author" content="GITAM"/>
+	<link href="https://login.gitam.edu/" rel="canonical"/>
+	<link href="https://cdn.gitam.edu/images/favicon/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+	<link href="https://cdn.gitam.edu/css/font.css" rel="stylesheet"/>
+	<link href="Styles/font-awesome.min.css" rel="stylesheet"/>
+	<link href="Styles/styles.css" rel="stylesheet"/><!--[if lt IE 9]>
+<script src="html5shiv.js"></script>
+<![endif]<link type="text/css" href="Styles/StyleSheet1.css" rel="stylesheet" >--><script type="text/javascript">
+
+
+          document.addEventListener("DOMContentLoaded", function () {
+              // Disable right-click (prevents Inspect Element via context menu)
+              document.addEventListener("contextmenu", function (e) {
+                  e.preventDefault();
+                  alert("Developer tools are disabled on this page.");
+              });
+
+              // Disable F12, Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+U
+              document.addEventListener("keydown", function (e) {
+                  if (
+                      e.key === "F12" ||
+                      (e.ctrlKey && e.shiftKey && e.key === "I") || // Ctrl+Shift+I
+                      (e.ctrlKey && e.shiftKey && e.key === "J") || // Ctrl+Shift+J
+                      (e.ctrlKey && e.key === "U") || // Ctrl+U (View Source)
+                      (e.ctrlKey && e.key === "S") || // Ctrl+S (Save Page)
+                      (e.key === "F5") || // Refresh
+                      (e.key === "F7")    // Sometimes used for debugging
+                  ) {
+                      e.preventDefault();
+                      alert("Developer tools are disabled on this page.");
+                  }
+              });
+
+              // Detect if DevTools is open (works in Chrome/Edge)
+              let devtoolsOpen = false;
+              const devtoolsCheck = () => {
+                  const widthThreshold = window.outerWidth - window.innerWidth > 160;
+                  const heightThreshold = window.outerHeight - window.innerHeight > 160;
+                  if ((widthThreshold || heightThreshold) {
+                      if (!devtoolsOpen) {
+                          alert("Developer tools are disabled. Please close them to continue.");
+                          devtoolsOpen = true;
+                          window.location.reload(); // Force refresh
+                      }
+                  }
+              };
+              setInterval(devtoolsCheck, 1000); // Check every second
+          });
+
+
+      </script><script type="text/javascript">
+        jQuery(document).ready(function ($) {
+
+            if (window.history && window.history.pushState) {
+
+                $(window).on('popstate', function () {
+                    var hashLocation = location.hash;
+                    var hashSplit = hashLocation.split("#!/");
+                    var hashName = hashSplit[1];
+
+                    if (hashName !== '') {
+                        var hash = window.location.hash;
+                        if (hash === '') {
+                            window.location = "https://login.gitam.edu/gitamsignon";
+                            // alert('Back button was pressed.');
+
+                        }
+                    }
+                });
+
+                window.history.pushState('forward', null, '');
+            }
+
+        });
+    </script><script type="text/javascript">
+        window.onload = function () {
+            if (window.history.replaceState) {
+                window.history.replaceState(null, null, window.location.href);
+            }
+        }
+    </script><!-- IE Fix for HTML5 Tags --><!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+	<style type="text/css">/*  body {
+  font-family: "Forma DJR Display Regular" !important;
+ 
+ 
+  
+ 
+  letter-spacing: 1.3px;
+}
+
+
+        .login-container {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #fff;
+        }
+
+        .login-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            text-align: center;
+          
+            color: black;
+            width: 400px;
+            border: 1px solid #007467;
+        }
+
+        .login-container img {
+            margin: auto;
+            margin-bottom:40px;
+        }
+
+        .login-card input {
+            margin-bottom: 1rem;
+        }
+
+        .left-section {
+            color: white;
+          
+           background-color:#007367;
+        }
+
+        .left-section h2 {
+            font-weight: bold;
+            color: #f4e4c9;
+            font-size: 28px;
+        }
+
+        .content {
+           
+            left: 20%;
+            bottom: 2%;
+          
+
+        }
+
+        .content li {
+            color: #fff;
+            font-size: 12px;
+            text-align: justify;
+            line-height: 1.7;
+        }
+
+        .login-btn,
+        .login-btn:hover{
+            background-color: #005f56;
+            color: white !important;
+              
+             border-radius: 6px
+           
+        }
+        .liginBtns{
+            margin-top: 20px;
+        }
+        .btn:focus-visible{
+            box-shadow:none;
+        }
+
+        .login input.form-control {
+            border: none !important;
+            border-bottom: 1px solid #ccc !important;
+            border-radius: 0;
+            text-align: center;
+            letter-spacing:1.3px;
+        }
+
+        .login .form-control:focus {
+            border: none;
+            border-bottom: 1px solid #ccc;
+            box-shadow: none;
+        }
+
+        input::placeholder,
+        textarea::placeholder {
+            color: #ccc;
+            opacity: 1;
+        }
+
+      
+
+        .text-muted a {
+            text-align: right;
+            display: flex;
+            justify-content: end;
+            margin-top: -12px;
+            font-size: 12px;
+            color: #666;
+            text-decoration: none;
+        }
+        .btn,input {
+  
+          letter-spacing: 1.3px;
+        }
+
+      
+
+        span#lblStopSpam {
+            border: 1px dashed;
+            padding: 0px 5px;
+            margin-right: 10px;
+        }
+
+        input#btnRefresh {
+            background: #007476;
+            padding: 2px 12px;
+            margin-bottom: 0px;
+            margin-right: 10px;
+        }
+
+        input#txtCaptcha {
+            border: 1px solid #ccc;
+            margin-bottom: 0px;
+            padding: 3px 5px;
+            width: 100px;
+        }
+
+        .login p {
+            font-size: 12px;
+        }
+
+      
+
+        .mt-200 {
+            margin-top: 200px;
+        }
+
+        .page-title{
+            text-align: center;
+    font-weight: 600;
+    color: #f3e5cb;
+    margin-bottom: 150px;
+        }
+
+
+        .contentSec h5 {
+ 
+  color:#007467;
+    margin-bottom: 25px;
+}
+
+        .contentSec {
+               justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    border-radius: 20px;
+ 
+   background:#f3e5cb;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+    width: 350px;
+
+        }
+        .contentSec .img1{
+            width:200px;
+        }
+        .contentSec .img2{
+            width:265px;
+        }
+
+        .resetText {
+       
+          text-decoration: none;
+       
+        }
+        .anchorTags{
+            background: transparent;
+            border: none;
+            color: #007467;
+            font-size: 14px;
+        }
+        .content p{
+            font-size: 12px;
+          text-align: center;
+          margin-top: 40px;
+        }
+
+        @media (min-width:1200px) and (max-width:1700px){
+            .contentSec .img1,
+            .contentSec .img3{
+                width:150px;
+            }
+            .contentSec .img2{
+                width:200px;
+            }
+           
+           
+        }
+
+         .mobileSec {
+            display: none;
+        }
+
+  
+
+      .login h5{
+                display:none;
+                color: #007467;
+            }
+        @media (max-width: 1199px) {
+            .content li {
+                font-size: 10px;
+            }
+            .left-section{
+                display:none !important;
+            }
+
+            .login-container {
+                min-height: auto;
+                margin-top: 30px;
+               
+            }
+
+            .login-card {
+            
+                padding: 16px;
+               border:none;
+            }
+
+            .login-container img {
+                margin: auto;
+             
+                margin-bottom: 15px;
+            }
+
+            .login input.form-control {
+                border: none;
+                border-bottom: 1px solid #005f56;
+                border-radius: 0;
+                text-align: center;
+                background: #fff;
+                font-size: 13px;
+            }
+
+            .login-btn {
+                margin-top: 5px !important;
+                font-size: 12px;
+            }
+
+            .login-card p {
+                font-size: 12px;
+                margin: 2px;
+            }
+            .liginBtns {
+              margin-top: 15px;
+            }
+            .mb-5{
+                margin-bottom:10px !important;
+            }
+            .login h5{
+                display:block;
+            }
+           
+        }
+         .gitam-logo{
+                width:150px;
+            }
+
+ 
+
+      .form-control::placeholder{
+          font-size:14px;
+      }
+     .linesImg {
+          width: 500px;
+          bottom: 0;
+          position: absolute;
+          left: 0;
+        }
+     .mb-60{
+         margin-bottom:75px !important;
+     }
+
+       .my-gitam-logo{
+           text-align: center;
+             margin-bottom: 150px;
+       }
+       .my-gitam-logo svg{
+           width: 270px;
+       }*/
+
+        #ButtonResendOTP{
+             background-color: #007467;
+         }   
+         .wrapper {
+          display: none;
+        }
+	</style>
+</head>
+<body>
+<form action="" id="form1" method="post"><input name="__original_url" type="hidden" value="https://login.gitam.edu/./"/> <input id="__VIEWSTATE" name="__VIEWSTATE" type="hidden" value="8lrojK912hmGJA/KODb19Q1jLF4Vm/n/JMCpoSOLtrrmK6/+Gu0FoEviN3rBTnp7U/WTxIjdCrTPAUew0dAOzxPf7tRJhKK8yGlMMlK31GYpjU1mtB4+o5XDvew9D4dItvO+7AORXE8jbqf1Feyyzg=="/> <script language="JavaScript">
+window.history.forward(1);
+</script> <script src="/ScriptResource.axd?d=XF4GbmcNnbgUscul6dE9s5YLjl1xwEYiLZDRZG90C--Zd2wxezy1BUgNI3CFCi3XIule1Vi2HnwQR9qyadoUqk9jq33-UdLo-1uhgrWlwPx35-NJTpDydCWfobzk75Mwrqu1BNDv6N7ktQTvHpQPtrmXa6bBW68QjQcctU1oPjgU-NZZbDQQtbK6hWUk4ksF0&amp;t=5c0e0825" type="text/javascript"></script> <script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script> <input id="__VIEWSTATEGENERATOR" name="__VIEWSTATEGENERATOR" type="hidden" value="C2EE9ABB"/> <input id="__VIEWSTATEENCRYPTED" name="__VIEWSTATEENCRYPTED" type="hidden" value=""/> <input id="__EVENTVALIDATION" name="__EVENTVALIDATION" type="hidden" value="m47+qjay8iHtJqhnOvLwD93LPF+W2GJUVb6lQSSODQWdEnToqjr+v94PgMT5pTwC3+HSi4bqmDYwiVhYczgIFroXNGUwFHTgAgixW0UQJlKeYISYC0P04nCC98clkAxNcjpRuU/IXpENLxenRyS/dq5BaopHyt4Horc3/J+XHGUN2zFj/Tr+Q0E8eVb3gHIIeVKjxnAiEAY/TfdCLjHCeWgRHpbEguE+nM5SEGQoyg72Txju2egLHspB2NQyJogLIImaVvX2K7ofdDfTuj9vRdAU/kRj1KFYCyJzy81ggBY="/>
+<div class="container-fluid">
+<div class="row"><!-- Left Section -->
+<div class="col-xl-8 d-flex flex-column justify-content-center left-section">
+<div class="content">
+<div class="my-gitam-logo"><!--?xml version="1.0" encoding="UTF-8"?--><svg data-name="Layer 1" id="Layer_1" viewBox="0 0 196.56 41.95" xmlns="http://www.w3.org/2000/svg"> <defs>
+<style type="text/css">.cls-1 {
+        fill: #f3e5cb;
+      }
+
+      .cls-2 {
+        isolation: isolate;
+      }
+</style>
+</defs> <g> <path class="cls-1" d="M88.91,22.81h6.79v4.3c-1.88.88-4.16,1.32-6.85,1.32-2.87,0-5.07-.72-6.61-2.15s-2.3-3.51-2.3-6.23.71-4.69,2.12-6.19,3.45-2.25,6.13-2.25c1.77,0,3.2.31,4.29.93,1.09.62,1.88,1.58,2.37,2.88l4.9-.63c-.66-2.19-1.94-3.93-3.84-5.23-1.9-1.3-4.42-1.95-7.58-1.95-2.65,0-4.98.5-7,1.49s-3.59,2.42-4.72,4.29c-1.13,1.87-1.69,4.11-1.69,6.74s.56,4.79,1.67,6.62c1.12,1.83,2.72,3.24,4.8,4.22,2.09.98,4.58,1.47,7.47,1.47,2.16,0,4.24-.28,6.23-.85,1.99-.56,3.71-1.36,5.17-2.4v-10.13h-11.33v3.74h-.02Z"></path> <polygon class="cls-1" points="138.45 8.21 114.84 8.21 114.84 12.31 124.21 12.31 124.21 31.85 129.11 31.85 129.11 12.31 138.45 12.31 138.45 8.21"></polygon> <path class="cls-1" d="M190.97,8.21l-8.68,18.45-8.71-18.45h-7.5v1.08c1.05.32,1.77,1.29,1.77,2.4v20.17h4.54V15.1l7.88,16.75h3.81l7.88-16.92v16.92h4.6V8.21h-5.6,0Z"></path> <path class="cls-1" d="M105.86,8.21h-2.29v1.08l.29.09c1.19.36,2,1.46,2,2.7v19.77h4.9V8.21h-4.9Z"></path> <path class="cls-1" d="M152.79,8.21h-5.47l-10.92,23.65h5.06l1.74-4.02c4.48-2.67,10.1-3.23,12.12-3.34l3.19,7.36h5.23l-10.96-23.65h.01ZM145.57,22.37l.32-.72h0l4.11-9.27,3.63,8.25c-2,.19-4.99.66-8.07,1.74h0Z"></path> </g> <path class="cls-1" d="M24.89,8.21l-8.68,18.45L7.5,8.21H0v1.08c1.05.32,1.77,1.29,1.77,2.4v20.17h4.54V15.1l7.88,16.75h3.81l7.88-16.92v16.92h4.6V8.21h-5.6,0Z"></path> <g class="cls-2"> <g class="cls-2"> <path class="cls-1" d="M38.64,37.69c-.64,0-1.23-.05-1.77-.14s-.97-.2-1.29-.32l1.09-3.45c.68.19,1.29.28,1.83.27.54,0,1.01-.17,1.42-.47s.76-.81,1.04-1.52l.4-1.02-7.23-19.19h4.98l4.59,14.19h.21l4.6-14.19h4.99l-7.98,21.07c-.37,1-.86,1.85-1.48,2.56-.61.71-1.36,1.26-2.25,1.64-.89.38-1.94.57-3.17.57Z"></path> </g> </g> <g class="cls-2"> <g class="cls-2"> <path class="cls-1" d="M58.78,23.44c-.23,0-.42-.19-.42-.42v-3.13c0-.23.19-.42.42-.42h9.28c.23,0,.42.19.42.42v3.13c0,.23-.19.42-.42.42h-9.28Z"></path> </g> </g> </svg></div>
+
+<div class="col-xxl-10 mx-auto">
+<div class="row">
+<div class="col-md-6 d-flex  justify-content-center">
+<div class="contentSec">
+<h5>Student</h5>
+<img alt="" class="img-fluid img1" src="Images/student1.png"/></div>
+</div>
+
+<div class="col-md-6 d-flex justify-content-center">
+<div class="contentSec">
+<h5>Staff</h5>
+<img alt="" class="img-fluid img2" src="Images/Staff2.png"/></div>
+</div>
+</div>
+</div>
+</div>
+<img class="img-fluid linesImg" src="Images/lines.png"/></div>
+
+<div class="mobileSec px-0 d-none"><img alt="" class="img-fluid position-relative mobile-bg" src="Images/mobile-image.png"/>
+<div class="carousalSec">
+<div class="carousel slide px-0" data-bs-ride="carousel" id="demo"><!-- Indicators/dots -->
+<div class="carousel-indicators"><button class="active" data-bs-slide-to="0" data-bs-target="#demo" type="button"></button><button data-bs-slide-to="1" data-bs-target="#demo" type="button"></button></div>
+<!-- The slideshow/carousel -->
+
+<div class="carousel-inner">
+<div class="carousel-item active">
+<div class="col-sm-12 content">
+<h6>Student</h6>
+<img alt="" class="img-fluid" src="Images/student.png"/>
+<ul class="mt-3">
+	<li>Daily attendance &amp; Courses Time table.</li>
+	<li>Academic track SGPA / CGPA.</li>
+	<li>Current semester G-Learn courses.</li>
+	<li>Course registration.</li>
+	<li>Scholarship information.</li>
+	<li>Online grade card &amp; hall ticket download.</li>
+	<li>Fee details &amp; Navigate to G-Pay and pay fees.</li>
+</ul>
+</div>
+<!-- <img src="assets/img/student-bg-mobile.png" alt="Los Angeles" class="d-block mob-image1" style="width:100%">
+                                <img src="assets/img/student-bg-mobile1.png" alt="Los Angeles" class="d-block mob-image2" style="width:100%"> --></div>
+
+<div class="carousel-item">
+<div class="col-sm-12 content">
+<h6>Staff</h6>
+<img alt="" class="img-fluid" src="Images/staff.png"/>
+<ul class="mt-3">
+	<li>LPC, Travel desk, Events, E-file, Requests &amp; Approvals, biometric information</li>
+	<li>Timetable for Teaching</li>
+	<li>Bell-the-CATS</li>
+	<li>HR profile (Personal/ nominee/ address and certificate upload)</li>
+	<li>Finances (Monthly pay slips/ Incometax / Form 16 and NPS).</li>
+	<li>Information Systems</li>
+	<li>Department Communications and Notice Board and more</li>
+</ul>
+</div>
+<!-- <img src="assets/img/staff-bg-mobile.png" alt="Chicago" class="d-block  mob-image1" style="width:100%">
+                        <img src="assets/img/student-bg-mobile1.png" alt="Los Angeles" class="d-block mob-image2" style="width:100%"> --></div>
+</div>
+<!-- Left and right controls/icons --><button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#demo" type="button"></button><button class="carousel-control-next" data-bs-slide="next" data-bs-target="#demo" type="button"></button></div>
+</div>
+</div>
+<!-- Right Section -->
+
+<div class="col-sm-10 col-md-8 col-lg-5 col-xl-4 mx-auto d-flex justify-content-center align-items-center login-container">
+<div class="login-card"><img alt="GITAM Logo" class="img-fluid gitam-logo" src="Images/gitam-Logo-new.png"/>
+<div class="login">
+<div>
+<h5 class="text-center mb-3  main-title">My-GITAM</h5>
+
+<div id="MainDiv">
+<div class="form-horizontal">
+<h3 class="text-center"> </h3>
+
+<div class="row">
+<div class="col-xl-12"><input autocomplete="off" class="form-control" id="txtusername" maxlength="16" name="txtusername" onkeypress="return (event.charCode &gt;= 65 &amp;&amp; event.charCode &lt;= 90) || (event.charCode &gt;= 97 &amp;&amp; event.charCode &lt;= 122) || (event.charCode &gt;= 48 &amp;&amp; event.charCode &lt;= 57)" placeholder="User ID" type="text"/></div>
+
+<div class="col-xl-12"><input autocomplete="off" class="form-control" id="password" maxlength="20" name="password" onkeypress="return event.charCode !== 39;" placeholder="Password" type="password"/></div>
+</div>
+
+<div class="form_div" id="captcha">
+<div class="justify-content-between">
+<div class="row">
+<div class="col-lg-12" style="text-align:left !important;"><small class="mb-1">CAPTCHA</small></div>
+</div>
+
+<div class="row">
+<div class="col-5 col-sm-5 col-md-5 col-lg-5 pe-0">
+<div class="preview" style="width:100% !important;background-color:white !important; border:0px none;"> </div>
+</div>
+
+<div class="col-2 col-sm-2 col-md-2 col-lg-2"> </div>
+
+<div class="col-5 col-sm-5 ps-0">
+<div class="captcha_form btn-left" style="padding-left:0px !important;margin-left:0px !important"><input class="form-control mb-0" id="captcha_form" placeholder="Enter CAPTCHA" type="text"/></div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-md-12 liginBtns"><input class="btn btn-primary login-btn mb-4" id="Submit" name="Submit" onclick="return Validatecaptcha();" type="submit" value="LOGIN"/></div>
+
+<div class="d-flex justify-content-between"><input class="resetText anchorTags" id="Button1" name="Button1" tabindex="1" type="submit" value="Reset password"/> <input class="anchorTags" id="Button2" name="Button2" type="submit" value="Contact CATS"/></div>
+</div>
+</div>
+
+<div class="error text-center" id="errlblcaptcha" style="color:red"> </div>
+
+<div class="row">
+<div class="col-xs-12 col-md-12">
+<center>
+<p> </p>
+</center>
+</div>
+</div>
+
+<div class="bor">
+<div class="row">
+<div class="col-md-12">
+<div> </div>
+</div>
+</div>
+<br/>
+ </div>
+
+<div class="wrapper ">
+<div class="inner_wrapper">
+<div class="grid-container">
+<div class="row theight">
+<div class="col-md-12 evcal">
+<h2 class="text-center"><input class="btn btn-primary hidden" id="btpastweek" name="btpastweek" type="submit" value="Past week"/>     GITAM events calendar    <input class="btn btn-primary hidden" id="btnpresent" name="btnpresent" type="submit" value="Present week"/> <input class="btn btn-primary hidden" id="btNextweek" name="btNextweek" type="submit" value="Next week"/></h2>
+</div>
+</div>
+
+<div class="row grid-row" id="inner"> </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script src="https://cdn.gitam.edu/vendor/bootstrap-5.2.3/js/bootstrap.min.js"></script> <!-- Piwik --> <script type="text/javascript">
+            var _paq = _paq || [];
+            /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+            _paq.push(['trackPageView']);
+            _paq.push(['enableLinkTracking']);
+            (function () {
+                var u = "//stats.gitam.edu/";
+                _paq.push(['setTrackerUrl', u + 'piwik.php']);
+                _paq.push(['setSiteId', '3']);
+                var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+                g.type = 'text/javascript'; g.async = true; g.defer = true; g.src = u + 'piwik.js'; s.parentNode.insertBefore(g, s);
+            })();
+        </script> <!-- End Piwik Code <script src="modernizr-latest.js"  type="text/javascript" ></script>--> <script src="Scripts/jquery-3.1.1.min.js"></script> <script src="Scripts/bootstrap.min.js"></script> <script src="Scripts/owl.carousel.js"></script> <script src="Scripts/main.js"></script> <script type="text/javascript">
+
+            var $headerHeight = $(".theight").height();
+            $(".grid-row ").css({
+                'padding-bottom': $headerHeight
+            })
+            var captchaValue = "";
+            function gencaptcha() {
+                var randomNr1 = 0;
+                var randomNr2 = 0;
+                while (randomNr1 === 0) {
+                    randomNr1 = Math.floor(Math.random() * 10);
+                }
+
+                while (randomNr2 === 0) {
+                    randomNr2 = Math.floor(Math.random() * 10);
+                }
+
+                totalNr = randomNr1 + randomNr2;
+                captchaValue = randomNr1 + " + " + randomNr2;
+            }
+
+            function isNumberKey(evt) {
+                var charCode = (evt.which) ? evt.which : event.keyCode;
+                if (charCode > 31
+                    && (charCode < 48 || charCode > 57))
+                    return false;
+
+                return true;
+            }
+            $("#validatesbmt").click(function () {
+                Validatecaptcha();
+            })
+            function setcaptcha() {
+                var html = "";
+                for (var i = 0; i < captchaValue.length; i++) {
+                    html += '<span>' + captchaValue[i] + ' </span>';
+                }
+                document.querySelector(".preview").innerHTML = html;
+            }
+            $(document).ready(function () {
+                initCaptcha();
+            })
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+            // Function to set the CAPTCHA text with distortion
+            function setcaptcha() {
+                captchaValue = generateCaptcha();
+                var html = "";
+                var xOffset = 0; // Start with no offset for the first letter
+
+                // Create the CAPTCHA HTML with each letter having a random rotation and position
+                for (var i = 0; i < captchaValue.length; i++) {
+                    var angle = (Math.random() * 30 - 15); // Random angle between -15 and 15 degrees
+                    var yOffset = (Math.random() * 10 - 5); // Random Y offset between -5px and 5px
+
+                    // Apply rotation and vertical offset to each letter, while keeping them spaced
+                    html += `<span style="transform: rotate(${angle}deg); left: ${xOffset}px; top: ${yOffset}px;">${captchaValue[i]}</span>`;
+
+                    // Increase the xOffset for the next letter to avoid overlap
+                    xOffset += 20 + Math.random() * 10; // Adjust the horizontal space between letters
+                }
+                document.querySelector(".preview").innerHTML = html;
+            }
+
+            // Function to generate the CAPTCHA for random text
+            function generateCaptcha() {
+                var chars = "012345689";
+                var captcha = "";
+                for (var i = 0; i < 5; i++) {
+                    captcha += chars.charAt(Math.floor(Math.random() * chars.length));
+                }
+                return captcha;
+            }
+
+            $(document).ready(function () {
+
+                initCaptcha();
+                // Listen for changes in the CAPTCHA input field
+                $("#captcha_form").on("input", function () {
+                    $("#errlblcaptcha").html("");  // Clear the error message when the user starts typing
+                    $("#lblmessage").text(""); 
+                });
+            })
+            function initCaptcha() {
+                setcaptcha();
+            }
+
+
+            // Function to validate the CAPTCHA entered by the user
+            function Validatecaptcha() {
+                $("#lblmessage").text(""); 
+                var enteredCaptcha = document.getElementById("captcha_form").value;
+                if (enteredCaptcha === captchaValue) {
+                    $("#errlblcaptcha").html("");
+                    return true;
+                } else {
+                    $("#errlblcaptcha").html("Invalid Captcha");
+                    return false;
+                }
+            }
+
+
+
+        </script></form>
+<style type="text/css">.upcomming {
+         background:#7486c5 !important;
+        }
+
+        .aa .list-group-item {
+           padding: 3px 0px;
+width: 100%;
+float: right;
+font-size: 12px;
+text-align: left;
+border: 0 !important;
+        }
+        .gg {
+            color: #7486c5;
+        }
+          .re {
+            color: #474f6b;
+        }  
+        .upcomming .event_block {
+            background:#7486c5;
+        }
+        .slider::before {
+            background:#94172d !important;
+        }
+        .event_block .event_date h3 {
+            text-transform:uppercase;
+        }
+
+         .event_block .event_date h3 {
+                font-size:14px;
+            }
+        .onmobi {
+            width: 100%;
+height: 100%;
+        }
+         @media screen and (min-width:320px) and (max-width:1366px) {
+                .slider .holder .owl_options a.play, .slider .holder .owl_options a.stop, .owl-next i, .owl-prev i{
+                    height: 30px;
+                    line-height: 30px;
+                    width: 30px;
+                    font-size:14px;
+                }
+            .slider .owl-nav .owl-prev i {
+                 height: 30px;
+                    line-height: 30px;
+                    width: 30px;
+                    font-size:14px;
+            }
+            .event_block .event_date h3 {
+                font-size:10px;
+            }
+            }
+
+        @media screen and (min-width:1367px) and (max-width:1921px) {
+            .gh {
+                    padding: 6px 18px;
+    font-size: 17px;
+            }
+
+           /* .btn {
+                font-size:17px;
+            }*/
+        }
+       
+         @media screen and (min-width:768px) and (max-width:5000px) {
+            .onmobi {
+                display:none;
+            }
+        }
+          @media screen and (min-width:320px) and (max-width:767px) {
+            body {
+                overflow-y:scroll;
+            }
+            /*.wrapper {
+                display:none;
+            }*/
+            .evcal h2 {
+                font-size:16px;
+                margin:10px 0;
+            }
+            .mobil_cal {
+                background:red;
+                padding:5px 7px;
+                color:#fff !important
+            }
+            .mobil_cal a {
+                color:#fff !important
+            }
+        }
+</style>
+
+
+</body></html>
