@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<base href="https://login.gitam.edu/Login.aspx" />
+	<base href="https://login.gitam.edu/" />
 	<title>My-GITAM login</title>
 	<meta charset="UTF-8"/><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="keywords" content="My-GITAM, My GITAM, GITAM login"/><meta name="description" content="Login to My-GITAM, the official portal of GITAM (Deemed to be University), to securely access academic resources, student services, faculty tools, and administrative support online"/><meta name="robots" content="index, follow"/><meta name="author" content="GITAM"/>
 	<link href="https://login.gitam.edu/" rel="canonical" />
@@ -399,13 +399,13 @@
 	</style>
 </head>
 <body>
-<form action="./Login.aspx" id="form1" method="post"><input name="__original_url" type="hidden" value="https://login.gitam.edu/Login.aspx./Login.aspx" /> <input id="__VIEWSTATE" name="__VIEWSTATE" type="hidden" value="tZMhPSWnoj/LVWGj9NGTDdnKPvRZD+db9HBwC3T8r0vMxJfdh/Lsvwytcq5jV3eDEcl0m3cxqAaXmpX0SuFs3xt1X3Oiiw06AtmLLFTn2A5LlQFqtcNAGFi32S8x/8loTHDzakPZI/gOGy4OlioKHQ==" /> <script language="JavaScript">
+<form action="./" id="form1" method="post"><input name="__original_url" type="hidden" value="https://login.gitam.edu/./" /> <input id="__VIEWSTATE" name="__VIEWSTATE" type="hidden" value="8bwPvPexHWQbgXQ0MSMMpXrzT7APxWSLBfsBx0BVsaNKEQc7DysVOWkknV4N06oivX6ZRiQiGjr5PgpS1yRWenaxvYX0BCYLhDS5946cvxtw/SP8C8wx5thABLHSCi6VaXUFXtIWFqlXAtmcATRS2Q==" /> <script language="JavaScript">
 window.history.forward(1);
 </script> <script src="/ScriptResource.axd?d=XF4GbmcNnbgUscul6dE9s5YLjl1xwEYiLZDRZG90C--Zd2wxezy1BUgNI3CFCi3XIule1Vi2HnwQR9qyadoUqk9jq33-UdLo-1uhgrWlwPx35-NJTpDydCWfobzk75Mwrqu1BNDv6N7ktQTvHpQPtrmXa6bBW68QjQcctU1oPjgU-NZZbDQQtbK6hWUk4ksF0&amp;t=5c0e0825" type="text/javascript"></script> <script type="text/javascript">
 //<![CDATA[
 if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
 //]]>
-</script> <input id="__VIEWSTATEGENERATOR" name="__VIEWSTATEGENERATOR" type="hidden" value="C2EE9ABB" /> <input id="__VIEWSTATEENCRYPTED" name="__VIEWSTATEENCRYPTED" type="hidden" value="" /> <input id="__EVENTVALIDATION" name="__EVENTVALIDATION" type="hidden" value="C0vaxFCa1TaOyoBun4DMOHqxKt3ylbpXTAEF4ebjcQACwC20pJwwvUMpJm9bSZM7ra6GuQKr/zU9sRgH4/ESOdHSLWn7ls8cNUcFkxrbGgmbH8Des5iNArTODxpM286aHzJI4d2Nx7775/tazT5GHr47hFYFaQ1QUvo0iQoUk8jQ/4HIgc63BnW62qbDgJZKPt0/eSIU3Nj1PuHX4XgD01tXADnCAdxDWsB6crZerq5Cq1pMHyKr1MDNQ4769lm8w0JjFmgeU2sBvplFt3mh8tgCLkAzkcaN3E7p74/vThk=" />
+</script> <input id="__VIEWSTATEGENERATOR" name="__VIEWSTATEGENERATOR" type="hidden" value="C2EE9ABB" /> <input id="__VIEWSTATEENCRYPTED" name="__VIEWSTATEENCRYPTED" type="hidden" value="" /> <input id="__EVENTVALIDATION" name="__EVENTVALIDATION" type="hidden" value="9IWTturX7Wqi5k3f3464SqAzuKuBJNF+Jdo7vhxhAd1ZSQgcT749WUbeEQkjfqVGTTGPBcpTu/d9xyEQ7Z/9TYuk5hCDef2tOCjKGCuRXd20c4E3xM3dH8F0kZL7GmC0rwL97FX0bG7MwOBSXENVGo1YtcxRfqiksRQx8rUEgx48hvVCVvkVyhIIaafHalrmjqo1W5B0p/SC+ZR4EvEr555Ju5VYB0G+C+43Lys+6Gz1cvN4Pacn4ZikB9cvsN9K6jBcjgCK3uRcIVZqlKpRXXcwH+8wB/ke7JQDcr7iw/4=" />
 <div class="container-fluid">
 <div class="row"><!-- Left Section -->
 <div class="col-xl-8 d-flex flex-column justify-content-center left-section">
@@ -788,6 +788,46 @@ height: 100%;
             }
         }
 </style>
-<p>&nbsp;</p>
-</body>
+<script>
+        // Function to detect if the device is running iOS
+        function isIOS() {
+            return /iPhone|iPad|iPod/.test(navigator.userAgent) ||
+                (navigator.userAgent.includes("Macintosh") && 'ontouchend' in document);
+        }
+
+        // Disable right-click
+        document.addEventListener("contextmenu", function (e) {
+            e.preventDefault();
+            alert("Action blocked.");
+            //window.location.href = "Logout.aspx";
+        });
+
+        // Block key combinations
+        document.addEventListener("keydown", function (e) {
+            const key = e.key.toLowerCase();
+            if (
+                (e.ctrlKey && key === 'u') || // Ctrl + U
+                (e.key === 'F12') || // F12
+                (e.ctrlKey && e.shiftKey && ['i', 'j', 'c'].includes(key)) || // Ctrl+Shift+I/J/C
+                (e.ctrlKey && key === 's') // Ctrl + S
+            ) {
+                e.preventDefault();
+                alert("Action blocked.");
+               // window.location.href = "Logout.aspx";
+            }
+        });
+
+         
+        //if (!isIOS()) {
+        //    setInterval(function () {
+        //        if (
+        //            window.outerHeight - window.innerHeight > 150 ||
+        //            window.outerWidth - window.innerWidth > 150
+        //        ) {
+        //            e.preventDefault();
+        //            alert("Action blocked.");
+        //        }
+        //    }, 1000);
+        //}
+    </script></body>
 </html>
